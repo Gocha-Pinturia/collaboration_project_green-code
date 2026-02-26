@@ -1,22 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 $headers_colors: rgba(24, 59, 86, 1);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 body {
+<<<<<<< main-section
+  font-family: "Poppins", sans-serif;
+  padding: 25px;
+  min-width: 320px;
+=======
     padding: 25px;
     min-width: 320px;
     font-family: sans-serif;
+>>>>>>> main
 }
 .header {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
 
+<<<<<<< main-section
+  .nav_bar {
+    height: 64px;
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+=======
     .nav_bar {
         display: flex;
         justify-content: space-between;
@@ -41,29 +60,78 @@ body {
     }
     .header_text {
         line-height: 28px;
+>>>>>>> main
     }
+  }
+
+  .header_title {
+    margin-bottom: 15px;
+    color: $headers_colors;
+  }
+  .header_text {
+    line-height: 28px;
+  }
 }
 
+<<<<<<< main-section
+// start burger-menu
+=======
 
 // start burger-menu 
+>>>>>>> main
 .nav_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    .menu_button {
-        height: 22px;
-        cursor: pointer;
-        .burger-line {
-            width: 22px;
-            background-color: rgba(58, 76, 102, 1);
-            height: 2px;
-            transition: .3s all;
-                &.burger-line:nth-of-type(2) {
-                    margin: 5px 0;
-                }
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .menu_button {
+    height: 22px;
+    cursor: pointer;
+    .burger-line {
+      width: 22px;
+      background-color: rgba(58, 76, 102, 1);
+      height: 2px;
+      transition: 0.3s all;
+      &.burger-line:nth-of-type(2) {
+        margin: 5px 0;
+      }
     }
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+    max-height: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 20%;
+    .menu_button {
+      display: flex;
+      justify-content: center;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 17.5px 0;
+      color: black;
+    }
+<<<<<<< main-section
+    .Free_Trial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: black;
+      width: 153px;
+      height: 54px;
+      color: white;
+=======
     .main-menu {
         display: flex;
         flex-direction: column;
@@ -99,31 +167,348 @@ body {
             height: 54px;
             color: white;
         }
+>>>>>>> main
     }
+  }
 }
 
-#check-menu:checked ~ .menu_button .burger-line:nth-of-type(2){
-    display: none;
+#check-menu:checked ~ .menu_button .burger-line:nth-of-type(2) {
+  display: none;
 }
 
 #check-menu:checked ~ .menu_button .burger-line:nth-of-type(1) {
-    position: relative;
-    transform: rotate(45deg);
-    top: 7px;
+  position: relative;
+  transform: rotate(45deg);
+  top: 7px;
 }
 #check-menu:checked ~ .menu_button .burger-line:nth-of-type(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: 5px;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 5px;
 }
 #check-menu:checked ~ .main-menu {
-    max-height: 100vh;
-    font-size: 16px;
+  max-height: 100vh;
+  font-size: 16px;
 }
 // end burger-menu
 
-
 .header_btn_play-icon_learn-more {
+<<<<<<< main-section
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  // align-self: center;
+  align-items: center;
+  .header_btn {
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .play_icon {
+    display: inline-block;
+    // border: solid;
+    // padding: 6px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250);
+  }
+  .learn_more {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+  }
+}
+
+// main-section
+
+%container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.services,
+.stories {
+  position: relative;
+  @extend %container;
+  padding: 24px 13px 85px;
+  width: 100%;
+  background-color: #e8db84;
+
+  border-radius: 10px;
+
+  // list made for service section logos
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 22px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38px;
+      height: 38px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  // section main image and circle behind it made with before
+  .image-layout {
+    padding: 0 0 25px 25px;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #052a44;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  //   section used to style "our services" text elements
+  .txt-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      line-height: 28px;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      line-height: 40px;
+      letter-spacing: 0.2px;
+      color: #183b56;
+      font-size: 28px;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+  }
+
+  //   added styles tu buttons
+
+  button {
+    align-self: center;
+    width: 107px;
+    height: 37px;
+    background-color: #052a44;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    bottom: 24px;
+  }
+}
+
+.stories {
+  display: none;
+}
+
+// from here starts card section
+
+.reviews {
+  text-align: center;
+  margin-top: 32px;
+  position: relative;
+  @extend %container;
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #052a44;
+    text-transform: capitalize;
+  }
+
+  .description {
+    font-size: 16px;
+    color: #5a7184;
+    line-height: 28px;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 21px;
+    .card-description {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 21px;
+    }
+  }
+}
+
+// bottom side buttons of the page
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.button-wrapper button {
+  align-self: center;
+  width: 89px;
+  height: 37px;
+  background-color: #052a44;
+  border-radius: 8px;
+  color: white;
+  margin-top: 32px;
+
+  &-heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    h3 {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 17px;
+    }
+    p {
+      font-size: 9px;
+      line-height: 16px;
+    }
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
+
+.button-switcher {
+  display: none;
+}
+
+// display version styles start here
+
+@media (min-width: 768px) {
+  .services,
+  .stories {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    padding: 40px 80px 40px 59px;
+
+    ul {
+      margin-bottom: 32px;
+    }
+
+    li {
+      font-size: 18px;
+
+      span {
+        width: 53px;
+        height: 53px;
+      }
+    }
+
+    .image-layout {
+      padding: 0 0 40px 37px;
+
+      &::before {
+        width: 197px;
+        height: 197px;
+        border-radius: 50%;
+        background-color: #052a44;
+      }
+      img {
+        min-width: 462px;
+        height: 100%;
+        width: 100%;
+        min-height: 474px;
+        object-fit: contain;
+      }
+    }
+    .txt-content {
+      align-items: flex-start;
+
+      display: flex;
+      max-width: 515px;
+
+      p {
+        text-align: left;
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 42px;
+        font-weight: 600;
+        color: black;
+      }
+    }
+
+    button {
+      position: static;
+      align-self: flex-start;
+      width: 179px;
+      height: 54px;
+      background-color: #052a44;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .stories {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // review
+
+  .reviews {
+    margin-top: 80px;
+    @extend %container;
+    h2 {
+      font-size: 42px;
+      line-height: 60px;
+    }
+
+    .description {
+      font-size: 18px;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      position: relative;
+      .card-description {
+        font-size: 16px;
+        line-height: 24px;
+      }
+=======
     margin-top: 20px;
     height: 38px;
     width: 255px;
@@ -174,9 +559,57 @@ body {
             font-weight: 500;
             color: black;
         }
+>>>>>>> main
     }
-}
 
+<<<<<<< main-section
+    .card {
+      border-radius: 16px;
+      padding: 32px;
+
+      &-heading {
+        gap: 24px;
+        margin-bottom: 24px;
+        h3 {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        .card-text {
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .button-wrapper button {
+    display: none;
+  }
+
+  .button-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 6px;
+  }
+
+  .switch-left,
+  .switch-right {
+    width: 49px;
+    height: 49px;
+    border-style: none;
+  }
+}
+=======
 @media screen and (min-width: 1080px) {
     .header {
 
@@ -296,3 +729,4 @@ body {
         //         color: white;
         //     }
         // }
+>>>>>>> main
