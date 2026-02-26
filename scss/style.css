@@ -353,7 +353,8 @@ body {
     height: 100%;
     width: 100%;
     min-height: 474px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .services .txt-content,
   .stories .txt-content {
@@ -448,6 +449,4 @@ body {
     height: 49px;
     border-style: none;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
