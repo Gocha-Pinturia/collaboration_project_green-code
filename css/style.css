@@ -181,7 +181,8 @@ body {
     width: 100%;
     height: 90px;
   }
-  .header .nav_bar .logo_ehya, .header .nav_bar .them_btn_night {
+  .header .nav_bar .logo_ehya,
+  .header .nav_bar .them_btn_night {
     display: none;
   }
   .header .nav_bar .nav_box {
@@ -238,6 +239,315 @@ body {
   }
   .header .nav_bar .nav_box .main-menu .nav_li_right {
     display: none;
+  }
+}
+.reviews,
+.services,
+.stories {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.services,
+.stories {
+  position: relative;
+  padding: 24px 13px 85px;
+  width: 100%;
+  background-color: #e8db84;
+  border-radius: 10px;
+}
+.services ul,
+.stories ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+.services li,
+.stories li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.services li span,
+.stories li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border-radius: 50%;
+}
+.services .image-layout,
+.stories .image-layout {
+  padding: 0 0 25px 25px;
+  position: relative;
+  z-index: 2;
+}
+.services .image-layout::before,
+.stories .image-layout::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #052a44;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.services .image-layout img,
+.stories .image-layout img {
+  width: 100%;
+}
+.services .txt-content,
+.stories .txt-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.services .txt-content p,
+.stories .txt-content p {
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.services .txt-content h2,
+.stories .txt-content h2 {
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #183b56;
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.services button,
+.stories button {
+  align-self: center;
+  width: 107px;
+  height: 37px;
+  background-color: #052a44;
+  border-radius: 8px;
+  color: white;
+  position: absolute;
+  bottom: 24px;
+}
+
+.stories {
+  display: none;
+}
+
+.reviews {
+  text-align: center;
+  margin-top: 32px;
+  position: relative;
+}
+.reviews h2 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #052a44;
+  text-transform: capitalize;
+}
+.reviews .description {
+  font-size: 16px;
+  color: #5a7184;
+  line-height: 28px;
+}
+.reviews .cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 21px;
+}
+.reviews .cards-wrapper .card-description {
+  font-size: 12px;
+  line-height: 20px;
+}
+.reviews .cards-wrapper .card {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 21px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.button-wrapper button {
+  align-self: center;
+  width: 89px;
+  height: 37px;
+  background-color: #052a44;
+  border-radius: 8px;
+  color: white;
+  margin-top: 32px;
+}
+.button-wrapper button-heading {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.button-wrapper button-heading h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.button-wrapper button-heading p {
+  font-size: 9px;
+  line-height: 16px;
+}
+.button-wrapper button-heading img {
+  width: 46px;
+  height: 46px;
+}
+
+.button-switcher {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .services,
+  .stories {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+    padding: 40px 80px 40px 59px;
+  }
+  .services ul,
+  .stories ul {
+    margin-bottom: 32px;
+  }
+  .services li,
+  .stories li {
+    font-size: 18px;
+  }
+  .services li span,
+  .stories li span {
+    width: 53px;
+    height: 53px;
+  }
+  .services .image-layout,
+  .stories .image-layout {
+    padding: 0 0 40px 37px;
+  }
+  .services .image-layout::before,
+  .stories .image-layout::before {
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+    background-color: #052a44;
+  }
+  .services .image-layout img,
+  .stories .image-layout img {
+    min-width: 462px;
+    height: 100%;
+    width: 100%;
+    min-height: 474px;
+    object-fit: contain;
+  }
+  .services .txt-content,
+  .stories .txt-content {
+    align-items: flex-start;
+    display: flex;
+    max-width: 515px;
+  }
+  .services .txt-content p,
+  .stories .txt-content p {
+    text-align: left;
+    font-size: 18px;
+  }
+  .services .txt-content h2,
+  .stories .txt-content h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+  }
+  .services button,
+  .stories button {
+    position: static;
+    align-self: flex-start;
+    width: 179px;
+    height: 54px;
+    background-color: #052a44;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .stories {
+    display: flex;
+    flex-direction: row;
+  }
+  .reviews {
+    margin-top: 80px;
+  }
+  .reviews h2 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+  .reviews .description {
+    font-size: 18px;
+  }
+  .reviews .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+  }
+  .reviews .cards-wrapper .card-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews .card {
+    border-radius: 16px;
+    padding: 32px;
+  }
+  .reviews .card-heading {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .reviews .card-heading h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .reviews .card-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .reviews .card-heading img {
+    width: 70px;
+    height: 70px;
+  }
+  .reviews .card-heading .card-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .button-wrapper button {
+    display: none;
+  }
+  .button-switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 6px;
+  }
+  .switch-left,
+  .switch-right {
+    width: 49px;
+    height: 49px;
+    border-style: none;
   }
 }
 
