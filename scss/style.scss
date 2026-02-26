@@ -21,6 +21,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         height: 64px;
         .nav_box {
             .desktop {
@@ -176,16 +177,16 @@ body {
     }
 }
 
-@media (min-width: 1240px){
+@media screen and (min-width: 1080px) {
     .header {
 
         .nav_bar {
             padding: 16px 24px;
-            // display: flex;
-            // justify-content: flex-end;
+            display: flex;
+            justify-content: space-between;
             background-color: rgba(5, 42, 68, 1);
             border-radius: 12px;
-            // width: 100%;
+            width: 100%;
             height: 90px;
             .logo_ehya, .them_btn_night {
                 display: none;
@@ -196,8 +197,8 @@ body {
                     justify-content: space-between;
                     width: 100%;
                     .desktop {
-                        display: flex;
-                        width: 160px;
+                        display: inline-block;
+                        // width: 160px;
                         color: white;
                         font-size: 20px;
                         font-weight: 500;
