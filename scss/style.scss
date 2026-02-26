@@ -26,7 +26,7 @@ body {
             .desktop {
                 display: none;
             }
-            .gocha {
+            .sign_free_trial {
                 display: none;
             }
         }
@@ -181,11 +181,11 @@ body {
 
         .nav_bar {
             padding: 16px 24px;
-            display: flex;
-            justify-content: flex-end;
+            // display: flex;
+            // justify-content: flex-end;
             background-color: rgba(5, 42, 68, 1);
             border-radius: 12px;
-            width: 100%;
+            // width: 100%;
             height: 90px;
             .logo_ehya, .them_btn_night {
                 display: none;
@@ -202,12 +202,18 @@ body {
                         font-size: 20px;
                         font-weight: 500;
                     }
-                    .gocha {
+                    .sign_free_trial {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        gap: 20px;
-                        width: 350px;
+                        gap: 40px;
+                        // width: 350px;
+                        .btn_sign {
+                            display: inline-block;
+                            width: 55px;
+                            color: white;
+                            // background-color: aqua;
+                        }
                         .Free_Trial {
                             display: flex;
                             justify-content: center;
@@ -217,6 +223,8 @@ body {
                             background-color: white;
                             color: black;
                             border-radius: 8px;
+                            font-size: 16px;
+                            font-weight: 600;
                             // display: none;
                         }
                     }
@@ -233,22 +241,14 @@ body {
                         flex-direction: row;
                         transition: none;
                         gap: 35px;
-                        width: 100%;
+                        width: 420px;
                         max-height: 90px;
                         font-size: 16px;
-                        color: white;
+                        // color: rgb(203, 31, 31);
                         background-color: rgba(5, 42, 68, 1);
-                        li:nth-of-type(5) {
-                            margin-left: 30%;
+                        .nav_li_right {
+                            display: none;
                         }
-                        // .nav_li_right {
-                        //     position: absolute;
-                        //     display: flex;
-                        //     justify-content: center;
-                        //     right: 0;
-                        //     color: red;
-                        //     border: solid red;
-                        // }
 
                     }
 
