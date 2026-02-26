@@ -10,6 +10,7 @@ $headers_colors: rgba(24, 59, 86, 1);
 body {
     padding: 25px;
     min-width: 320px;
+    font-family: sans-serif;
 }
 .header {
     position: relative;
@@ -17,22 +18,31 @@ body {
     text-align: center;
 
     .nav_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 64px;
-        
-        .logo {
-            display: flex;
-            justify-content: space-between;
+        .nav_box {
+            .desktop {
+                display: none;
+            }
+            .gocha {
+                display: none;
+            }
         }
     }
 
     .header_title {
         margin-bottom: 15px;
         color: $headers_colors;
+        font-size: 32px;
+        font-weight: 400;
     }
     .header_text {
         line-height: 28px;
     }
 }
+
 
 // start burger-menu 
 .nav_box {
@@ -68,6 +78,7 @@ body {
         height: 100vh;
         right: 0;
         top: 20%;
+        z-index: 1;
         .menu_button {
             display: flex;
             justify-content: center;
@@ -87,7 +98,6 @@ body {
             height: 54px;
             color: white;
         }
-
     }
 }
 
@@ -113,32 +123,175 @@ body {
 
 
 .header_btn_play-icon_learn-more {
+    margin-top: 20px;
     height: 38px;
+    width: 255px;
     display: flex;
-    justify-content: space-between;
-    // align-self: center;
+    justify-content: space-evenly;
     align-items: center;
     .header_btn {
+        width: 105px;
+        height: 37px;
         padding: 8px 12px;
-        background-color: black;
+        background-color: rgba(5, 42, 68, 1);
+        line-height: 22px;
         color: white;
         border-radius: 8px;
         font-weight: 500;
         font-size: 14px;
     }
-    .play_icon {
-        display: inline-block;
-        // border: solid;
-        // padding: 6px;
-        width: 25px;
-        border-radius: 50%;
-        background-color: rgb(250, 250, 250);
-    }
-    .learn_more {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 500;
-        color: black;
+    .box_learn_more {
+        display: flex;
+        justify-content: space-between;
+        gap: 7px;
+        align-items: center;
+        width: 112px;
+        height: 36px;
+        cursor: pointer;
+        .play_icon {
+            position: relative;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 15px solid rgba(5, 42, 68, 1);
+            &:before {
+                content: "";
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                z-index: -1;
+                top: -17px;
+                right: -7px;
+                border-radius: 50%;
+                background-color: rgb(255, 245, 245);
+            }
+        }
+        .learn_more {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+        }
     }
 }
 
+@media (min-width: 1240px){
+    .header {
+
+        .nav_bar {
+            padding: 16px 24px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(5, 42, 68, 1);
+            border-radius: 12px;
+            width: 100%;
+            height: 90px;
+            .logo_ehya, .them_btn_night {
+                display: none;
+            }
+
+                .nav_box {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    .desktop {
+                        display: flex;
+                        width: 160px;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    .gocha {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+                        width: 350px;
+                        .Free_Trial {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 160px;
+                            height: 54px;
+                            background-color: white;
+                            color: black;
+                            border-radius: 8px;
+                            // display: none;
+                        }
+                    }
+                    .menu_button {
+                        color: white;
+                        transform: none;
+                        .burger-line {
+                            display: none;
+                        }
+                    }
+                    .main-menu {
+                        position: static;
+                        display: flex;
+                        flex-direction: row;
+                        transition: none;
+                        gap: 35px;
+                        width: 100%;
+                        max-height: 90px;
+                        font-size: 16px;
+                        color: white;
+                        background-color: rgba(5, 42, 68, 1);
+                        li:nth-of-type(5) {
+                            margin-left: 30%;
+                        }
+                        // .nav_li_right {
+                        //     position: absolute;
+                        //     display: flex;
+                        //     justify-content: center;
+                        //     right: 0;
+                        //     color: red;
+                        //     border: solid red;
+                        // }
+
+                    }
+
+                
+            }
+
+        }
+    }
+}
+    // .nav_bar {
+    //     border: 1px solid red;
+    //     .desktop {
+    //         display: inline-block;
+    //         color: rgb(123, 22, 22);
+    //         font-size: 25px;
+    //     }
+    //     .them_btn_night, .logo_ehya {
+    //         display: none;
+    //     }
+    //     .them_btn_light {
+    //         color: white;
+    //         background-color: rgb(26, 186, 111);
+    //         border: solid red;
+    //     }
+    //     position: relative;
+    //     height: 86px;
+    //     .menu_button {
+    //         display: none;
+    //     }
+        // .main-menu {
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: center;
+        //     gap: 35px;
+        //     border: solid green;
+        //     max-height: 100%;
+        //     font-size: 36px;
+        //     transition: none;
+        //     background-color: rgba(5, 42, 68, 1);
+        //     border-radius: 12px;
+            
+        //     .menu_button {
+        //         font-size: 16px;
+        //         color: white;
+        //     }
+        // }
