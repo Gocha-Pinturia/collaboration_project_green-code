@@ -53,7 +53,6 @@
 }
 
 .form_container > form input{
-  width: 242px;
   height: 58px;
   border: none;
   border-radius: 8px;
@@ -192,4 +191,86 @@
 
 .copyright{
   display: none;
+}
+
+@media screen and (min-width: 426px) {
+  .form_container{
+    width: 1240px;
+    height: 674px;
+    padding: 40px 32px;
+    border-radius: 29px;
+  }
+
+  .FirstName_LastName, .EmailAddress_PhoneNumber{
+    flex-direction: row;
+    justify-content: center;
+    height: 58px;
+    gap: 12px;
+  }
+
+  .form_container > h2{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .form_container > p{
+    width: 875px;
+    margin: auto;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .form_container > form{
+    height: 437px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .form_container > form input{
+    width: 432px;
+  }
+
+  .form_container > form textarea{
+    width: 875px;
+    margin: auto;
+  }
+
+  .contact_info_container{
+    max-width: 1240px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 80px auto;
+    padding: 0;
+  }
+
+  .AddressAndPhone{
+    align-items: start;
+  }
+
+  .email{
+    text-align: right;
+  }
+
+  .copyright{
+    display: block;
+    margin: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 }
