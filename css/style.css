@@ -415,7 +415,7 @@ body {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .services,
   .stories {
     margin-bottom: 80px;
