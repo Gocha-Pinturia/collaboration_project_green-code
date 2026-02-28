@@ -1,0 +1,276 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+  width: 100%;
+  min-width: 271px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #E8DB84;
+  border-radius: 10px;
+}
+
+.form_container > h2 {
+  padding: 8px 17px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.form_container > p {
+  padding: 0 13px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.form_container > form {
+  margin: 0 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 577px;
+}
+
+.FirstName_LastName, .EmailAddress_PhoneNumber {
+  display: flex;
+  flex-direction: column;
+  height: 128px;
+  justify-content: space-between;
+}
+
+.form_container > form input {
+  height: 58px;
+  border: none;
+  border-radius: 8px;
+}
+
+.form_container > form textarea {
+  height: 207px;
+  border: none;
+  border-radius: 8px;
+  resize: none;
+}
+
+.form_container > form input::placeholder, .form_container > form textarea::placeholder {
+  padding: 20px 24px;
+  color: #1E1E1E;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+.form_container > form button {
+  width: 176px;
+  height: 54px;
+  color: #fff;
+  background-color: #052A44;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.contact_info_container {
+  max-width: 320px;
+  height: 356px;
+  margin: 32px auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+}
+
+.AddressAndPhone {
+  width: 272px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+}
+
+.AddressAndPhone > h3 {
+  margin-bottom: 8px;
+  color: #052A44;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.AddressAndPhone > span {
+  display: block;
+  color: #071210;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+
+.social_media {
+  width: 193px;
+  height: 78px;
+}
+
+.social_media > span {
+  display: block;
+  color: #071210;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.social_media > .icons {
+  width: 133px;
+  height: 33px;
+  margin: 9px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_media > .icons > a {
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  border: 0.5px solid #071210;
+  border-radius: 50%;
+}
+
+.social_media > .icons > a > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.email {
+  width: 228px;
+  height: 72px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #071210;
+}
+
+.email a {
+  text-decoration: none;
+  color: #071210;
+}
+
+.copyright {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    gap: 50px;
+  }
+  .form_container {
+    width: 100%;
+    max-width: 1240px;
+    height: 674px;
+    padding: 40px 32px;
+    border-radius: 29px;
+  }
+  .FirstName_LastName, .EmailAddress_PhoneNumber {
+    flex-direction: row;
+    justify-content: center;
+    height: 58px;
+    gap: 12px;
+  }
+  .form_container > h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .form_container > p {
+    width: 100%;
+    max-width: 875px;
+    margin: auto;
+    padding: 0;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .form_container > form {
+    height: 437px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form_container > form input {
+    width: 432px;
+  }
+  .form_container > form textarea {
+    width: 100%;
+    max-width: 875px;
+    margin: auto;
+  }
+  .contact_info_container {
+    max-width: 1240px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 80px auto;
+    padding: 0;
+  }
+  .AddressAndPhone {
+    align-items: start;
+  }
+  .email {
+    text-align: right;
+  }
+  .copyright {
+    display: block;
+    margin: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
