@@ -5,13 +5,11 @@ $color_icon: rgba(5, 42, 68, 1);
 .hero {
     max-width: 1240px;
     margin: 30px auto;
-    // padding-left: 30px;
     &__container {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // width: 80%;
         max-width: 1240px;
         min-height: 175px;
         background-color: rgba(232, 219, 132, 1);
@@ -67,10 +65,6 @@ $color_icon: rgba(5, 42, 68, 1);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // gap: 55px;
-        // max-width: 1160px;
-        // margin: 0 auto;
-        // padding-right: 30px;
     }
     &__about {
         font-family: Poppins;
@@ -80,7 +74,6 @@ $color_icon: rgba(5, 42, 68, 1);
         text-align: center;
         color: rgba(24, 59, 86, 1);
         margin-bottom: 30px;
-        // padding-bottom: 10px;
     }
     &__about-text {
         font-family: Open Sans;
