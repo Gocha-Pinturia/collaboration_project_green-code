@@ -37,7 +37,7 @@ body {
   display: none;
 }
 .header .header_title {
-  margin-bottom: 15px;
+  margin: 40px 0 15px 0;
   color: rgb(24, 59, 86);
   font-size: 32px;
   font-weight: 400;
@@ -168,7 +168,7 @@ body {
   top: -17px;
   right: -7px;
   border-radius: 50%;
-  background-color: rgb(255, 245, 245);
+  box-shadow: 1.42px 2.85px 27.04px 0px rgba(0, 0, 0, 0.08);
 }
 .header_btn_play-icon_learn-more .box_learn_more .learn_more {
   display: inline-block;
