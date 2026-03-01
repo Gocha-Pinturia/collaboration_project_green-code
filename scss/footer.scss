@@ -1,3 +1,6 @@
+$btn_color: #052A44;
+$text_color: #071210;
+
 body {
   display: flex;
   flex-direction: column;
@@ -89,7 +92,7 @@ body {
         width: 176px;
         height: 54px;
         color: #fff;
-        background-color: #052A44;
+        background-color: $btn_color;
         margin: 0 auto;
         border: none;
         border-radius: 8px;
@@ -124,7 +127,7 @@ body {
 
     & > h3{
       margin-bottom: 8px;
-      color: #052A44;
+      color: $btn_color;
       font-family: Poppins;
       font-weight: 500;
       font-size: 20px;
@@ -134,7 +137,7 @@ body {
 
     & > span{
       display: block;
-      color: #071210;
+      color: $text_color;
       font-family: Poppins;
       font-weight: 400;
       font-size: 16px;
@@ -149,7 +152,7 @@ body {
 
     & > span{
       display: block;
-      color: #071210;
+      color: $text_color;
       font-family: Poppins;
       font-weight: 400;
       font-size: 16px;
@@ -170,7 +173,7 @@ body {
         width: 33px;
         height: 33px;
         position: relative;
-        border: 0.5px solid #071210;
+        border: 0.5px solid $text_color;
         border-radius: 50%;
 
         & > img{
@@ -192,11 +195,11 @@ body {
     line-height: 36px;
     letter-spacing: 0%;
     text-align: center;
-    color: #071210;
+    color: $text_color;
 
     & a{
       text-decoration: none;
-      color: #071210;
+      color: $text_color;
     }
   }
 }
